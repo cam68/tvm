@@ -19,7 +19,7 @@ from ..base import get_last_ffi_error
 from libcpp.vector cimport vector
 from cpython.version cimport PY_MAJOR_VERSION
 from cpython cimport pycapsule
-from libc.stdint cimport int32_t, int64_t, uint64_t, uint8_t, uint16_t
+from libc.stdint cimport int32_t, int64_t, uint64_t, uint8_t, uint16_t, uint32_t
 import ctypes
 
 cdef enum TVMTypeCode:

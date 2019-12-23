@@ -35,6 +35,7 @@
 namespace tvm {
 namespace runtime {
 
+class ADTBuilder;
 /*!
  * \brief Base template for classes with array like memory layout.
  *
@@ -114,6 +115,7 @@ class InplaceArrayBase {
   }
 
  protected:
+  friend class ADTBuilder;
   /*!
    * \brief Construct a value in place with the arguments.
    *
@@ -165,7 +167,7 @@ class ADTObj : public Object, public InplaceArrayBase<ADTObj, ObjectRef> {
   /*! \brief The tag representing the constructor used. */
   uint32_t tag;
   /*! \brief Number of fields in the ADT object. */
-  uint32_t size;
+  uint32_t size{0};
   // The fields of the structure follows directly in memory.
 
   static constexpr const uint32_t _type_index = TypeIndex::kVMADT;

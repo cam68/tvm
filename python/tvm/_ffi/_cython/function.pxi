@@ -35,6 +35,7 @@ cdef int tvm_callback(TVMValue* args,
                       void* fhandle) with gil:
     cdef list pyargs
     cdef TVMValue value
+    cdef ObjectRef temp_obj
     cdef int tcode
     local_pyfunc = <object>(fhandle)
     pyargs = []
@@ -62,7 +63,7 @@ cdef int tvm_callback(TVMValue* args,
         if isinstance(rv, tuple):
             raise ValueError("PackedFunction can only support one return value")
         temp_args = []
-        make_arg(rv, &value, &tcode, temp_args)
+        make_arg(rv, &value, &tcode, &temp_obj, temp_args)
         CALL(TVMCFuncSetReturn(ret, &value, &tcode, 1))
     return 0
 
@@ -94,9 +95,11 @@ def convert_to_tvm_func(object pyfunc):
 cdef inline int make_arg(object arg,
                          TVMValue* value,
                          int* tcode,
+                         ObjectRef* temp_objs,
                          list temp_args) except -1:
     """Pack arguments into c args tvm call accept"""
     cdef unsigned long long ptr
+
     if isinstance(arg, ObjectBase):
         value[0].v_handle = (<ObjectBase>arg).chandle
         tcode[0] = kObjectHandle
@@ -104,6 +107,10 @@ cdef inline int make_arg(object arg,
         value[0].v_handle = (<NDArrayBase>arg).chandle
         tcode[0] = (kNDArrayContainer if
                     not (<NDArrayBase>arg).c_is_view else kArrayHandle)
+    elif isinstance(arg, tuple):
+        temp_objs[0] = convert_tuple(<tuple>arg)
+        value[0].v_handle = (<void*>(temp_objs[0].get()))
+        tcode[0] = kObjectHandle
     elif isinstance(arg, _TVM_COMPATS):
         ptr = arg._tvm_handle
         value[0].v_handle = (<void*>ptr)
@@ -221,10 +228,11 @@ cdef inline int FuncCall3(void* chandle,
                           int* ret_tcode) except -1:
     cdef TVMValue[3] values
     cdef int[3] tcodes
+    cdef ObjectRef[3] temp_objs
     nargs = len(args)
     temp_args = []
     for i in range(nargs):
-        make_arg(args[i], &values[i], &tcodes[i], temp_args)
+        make_arg(args[i], &values[i], &tcodes[i], &temp_objs[i], temp_args)
     CALL(TVMFuncCall(chandle, &values[0], &tcodes[0],
                      nargs, ret_val, ret_tcode))
     return 0
@@ -241,11 +249,14 @@ cdef inline int FuncCall(void* chandle,
 
     cdef vector[TVMValue] values
     cdef vector[int] tcodes
-    values.resize(max(nargs, 1))
-    tcodes.resize(max(nargs, 1))
+    cdef vector[ObjectRef] temp_objs
+    values.resize(nargs)
+    tcodes.resize(nargs)
+    temp_objs.resize(nargs)
+
     temp_args = []
     for i in range(nargs):
-        make_arg(args[i], &values[i], &tcodes[i], temp_args)
+        make_arg(args[i], &values[i], &tcodes[i], &temp_objs[i], temp_args)
     CALL(TVMFuncCall(chandle, &values[0], &tcodes[0],
                      nargs, ret_val, ret_tcode))
     return 0
