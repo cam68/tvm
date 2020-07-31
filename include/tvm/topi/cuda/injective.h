@@ -80,4 +80,4 @@ inline Schedule schedule_injective(const Target& target, const Array<Tensor>& ou
 }  // namespace cuda
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_CUDA_INJECTIVE_H_
+#endif  // TVM_TOPI_CUDA_INJECTIVE_H_

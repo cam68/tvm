@@ -124,4 +124,4 @@ inline bool EqualCheck(PrimExpr lhs, PrimExpr rhs) {
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_CONSTANT_UTILS_H_
+#endif  // TVM_TOPI_DETAIL_CONSTANT_UTILS_H_

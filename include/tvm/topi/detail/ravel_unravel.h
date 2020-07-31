@@ -78,4 +78,4 @@ inline Array<PrimExpr> UnravelIndex(PrimExpr idx, Array<PrimExpr> shape) {
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_RAVEL_UNRAVEL_H_
+#endif  // TVM_TOPI_DETAIL_RAVEL_UNRAVEL_H_

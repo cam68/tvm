@@ -512,4 +512,4 @@ inline Tensor prod(const Tensor& data, const Array<Integer>& axis, bool keepdims
 
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_REDUCTION_H_
+#endif  // TVM_TOPI_REDUCTION_H_

@@ -1510,4 +1510,4 @@ inline Tensor sparse_to_dense(const Tensor& sparse_indices, const Array<Integer>
 
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_TRANSFORM_H_
+#endif  // TVM_TOPI_TRANSFORM_H_

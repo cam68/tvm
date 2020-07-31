@@ -102,4 +102,4 @@ inline Schedule default_schedule_auto_inline(const Target& target, const Array<T
 }  // namespace x86
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_X86_DEFAULT_H_
+#endif  // TVM_TOPI_X86_DEFAULT_H_

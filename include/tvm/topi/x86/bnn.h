@@ -128,4 +128,4 @@ inline Schedule schedule_binary_dense(const Target& target, const Array<Tensor>&
 }  // namespace x86
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_X86_BNN_H_
+#endif  // TVM_TOPI_X86_BNN_H_

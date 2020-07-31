@@ -65,4 +65,4 @@ inline Schedule schedule_global_pool(const Target& target, const Array<Tensor>& 
 }  // namespace rocm
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ROCM_POOLING_H_
+#endif  // TVM_TOPI_ROCM_POOLING_H_

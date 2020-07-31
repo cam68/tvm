@@ -64,4 +64,4 @@ inline tvm::te::Tensor batch_matmul(const tvm::te::Tensor& x, const tvm::te::Ten
 }  // namespace topi
 }  // namespace tvm
 
-#endif // TVM_TOPI_NN_BATCH_MATMUL_H_
+#endif  // TVM_TOPI_NN_BATCH_MATMUL_H_

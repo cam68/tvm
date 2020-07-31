@@ -527,4 +527,4 @@ inline Tensor fast_erf(const Tensor& x, std::string name = "T_fast_erf",
 
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ELEMWISE_H_
+#endif  // TVM_TOPI_ELEMWISE_H_

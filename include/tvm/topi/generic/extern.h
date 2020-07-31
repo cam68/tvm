@@ -66,4 +66,4 @@ inline Schedule schedule_extern(const Target& target, const Array<Tensor>& outs)
 }  // namespace generic
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_GENERIC_EXTERN_H_
+#endif  // TVM_TOPI_GENERIC_EXTERN_H_

@@ -449,4 +449,4 @@ inline tvm::te::Tensor group_conv2d_ngchw(const tvm::te::Tensor& I, const tvm::t
 
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_H_
+#endif  // TVM_TOPI_NN_H_

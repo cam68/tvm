@@ -147,4 +147,4 @@ inline PrimExpr call_packed(Array<PrimExpr> args) {
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_EXTERN_H_
+#endif  // TVM_TOPI_DETAIL_EXTERN_H_

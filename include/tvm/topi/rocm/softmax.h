@@ -52,4 +52,4 @@ inline Schedule schedule_softmax(const Target& target, const Array<Tensor>& outs
 }  // namespace rocm
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ROCM_SOFTMAX_H_
+#endif  // TVM_TOPI_ROCM_SOFTMAX_H_

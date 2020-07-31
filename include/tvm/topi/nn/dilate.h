@@ -104,4 +104,4 @@ inline Tensor dilate(const Tensor& x, Array<PrimExpr> strides, std::string name 
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_DILATE_H_
+#endif  // TVM_TOPI_NN_DILATE_H_

@@ -78,4 +78,4 @@ inline Tensor reorg(const Tensor& data, int stride = 1, std::string name = "tens
 }  // namespace vision
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_VISION_REORG_H_
+#endif  // TVM_TOPI_VISION_REORG_H_

@@ -80,4 +80,4 @@ inline Tensor lrn(const Tensor& data, int size, int axis = 1, float alpha = 0.00
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_LOCAL_RESPONSE_NORM_H_
+#endif  // TVM_TOPI_NN_LOCAL_RESPONSE_NORM_H_

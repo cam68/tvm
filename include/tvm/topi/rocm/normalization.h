@@ -43,4 +43,4 @@ inline Schedule schedule_lrn(const Array<Tensor>& outs) { return topi::cuda::sch
 }  // namespace rocm
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ROCM_NORMALIZATION_H_
+#endif  // TVM_TOPI_ROCM_NORMALIZATION_H_

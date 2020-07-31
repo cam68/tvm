@@ -78,4 +78,4 @@ inline tvm::te::Tensor dense(const tvm::te::Tensor& data, const tvm::te::Tensor&
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_DENSE_H_
+#endif  // TVM_TOPI_NN_DENSE_H_

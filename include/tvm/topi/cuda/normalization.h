@@ -72,4 +72,4 @@ inline Schedule schedule_lrn(const Array<Tensor>& outs) {
 }  // namespace cuda
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_CUDA_NORMALIZATION_H_
+#endif  // TVM_TOPI_CUDA_NORMALIZATION_H_

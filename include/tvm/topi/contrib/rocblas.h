@@ -59,4 +59,4 @@ inline Tensor rocblas_matmul(const Tensor& lhs, const Tensor& rhs, bool transa, 
 }  // namespace topi
 }  // namespace tvm
 
-#endif // TVM_TOPI_CONTRIB_ROCBLAS_H_
+#endif  // TVM_TOPI_CONTRIB_ROCBLAS_H_

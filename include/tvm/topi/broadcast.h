@@ -432,4 +432,4 @@ TOPI_DEFINE_BCAST_OP(less_equal, { return (a <= b); });
 }  // namespace topi
 }  // namespace tvm
 
-#endif // TVM_TOPI_BROADCAST_H_
+#endif  // TVM_TOPI_BROADCAST_H_

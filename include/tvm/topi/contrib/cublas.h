@@ -85,4 +85,4 @@ inline Tensor cublas_batch_matmul(const Tensor& lhs, const Tensor& rhs, bool tra
 }  // namespace topi
 }  // namespace tvm
 
-#endif // TVM_TOPI_CONTRIB_CUBLAS_H_
+#endif  // TVM_TOPI_CONTRIB_CUBLAS_H_

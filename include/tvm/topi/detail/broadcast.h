@@ -139,4 +139,4 @@ inline tvm::te::Tensor WithBroadcast(FBinaryExpr op, const tvm::te::Tensor& A,
 }  // namespace topi
 }  // namespace tvm
 
-#endif // TVM_TOPI_DETAIL_BROADCAST_H_
+#endif  // TVM_TOPI_DETAIL_BROADCAST_H_

@@ -55,4 +55,4 @@ inline tvm::te::Tensor bias_add(const tvm::te::Tensor& data, const tvm::te::Tens
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_BIAS_ADD_H_
+#endif  // TVM_TOPI_NN_BIAS_ADD_H_

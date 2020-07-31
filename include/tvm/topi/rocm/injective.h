@@ -65,4 +65,4 @@ inline Schedule schedule_injective(const Target& target, const Array<Tensor>& ou
 }  // namespace rocm
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ROCM_INJECTIVE_H_
+#endif  // TVM_TOPI_ROCM_INJECTIVE_H_

@@ -74,4 +74,4 @@ inline Tensor scale_shift_nhwc(const Tensor& x, const Tensor& scale, const Tenso
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_MAPPING_H_
+#endif  // TVM_TOPI_NN_MAPPING_H_

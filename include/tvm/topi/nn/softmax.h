@@ -145,4 +145,4 @@ inline Tensor log_softmax(const Tensor& x, std::string name = "tensor",
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_SOFTMAX_H_
+#endif  // TVM_TOPI_NN_SOFTMAX_H_

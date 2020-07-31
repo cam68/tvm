@@ -196,4 +196,4 @@ Schedule schedule_reduce(const Target& target, Array<Tensor> outs) {
 }  // namespace cuda
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_CUDA_REDUCTION_H_
+#endif  // TVM_TOPI_CUDA_REDUCTION_H_

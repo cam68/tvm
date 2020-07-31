@@ -184,4 +184,4 @@ inline Schedule schedule_global_pool(const Target& target, const Array<Tensor>& 
 }  // namespace cuda
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_CUDA_POOLING_H_
+#endif  // TVM_TOPI_CUDA_POOLING_H_

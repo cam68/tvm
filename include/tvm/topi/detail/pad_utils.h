@@ -58,4 +58,4 @@ inline Array<PrimExpr> GetPadTuple(PrimExpr pad_h, PrimExpr pad_w) {
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_PAD_UTILS_H_
+#endif  // TVM_TOPI_DETAIL_PAD_UTILS_H_

@@ -81,4 +81,4 @@ inline Tensor flatten(const Tensor& x, std::string name = "tensor", std::string 
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_FLATTEN_H_
+#endif  // TVM_TOPI_NN_FLATTEN_H_

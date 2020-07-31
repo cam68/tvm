@@ -92,4 +92,4 @@ inline PrimExpr bilinear_sample_nchw(const Tensor& input, const Array<PrimExpr>&
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_TENSOR_UTILS_H_
+#endif  // TVM_TOPI_DETAIL_TENSOR_UTILS_H_

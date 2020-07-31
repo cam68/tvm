@@ -53,4 +53,4 @@ inline bool contains(Array<T> array, T item) {
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_ARRAY_UTILS_H_
+#endif  // TVM_TOPI_DETAIL_ARRAY_UTILS_H_

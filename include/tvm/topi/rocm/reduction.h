@@ -51,4 +51,4 @@ Schedule schedule_reduce(const Target& target, Array<Tensor> outs) {
 }  // namespace rocm
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ROCM_REDUCTION_H_
+#endif  // TVM_TOPI_ROCM_REDUCTION_H_

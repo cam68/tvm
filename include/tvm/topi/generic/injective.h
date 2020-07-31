@@ -74,4 +74,4 @@ inline Schedule schedule_injective(const Target& target, const Array<Tensor>& ou
 }  // namespace generic
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_GENERIC_INJECTIVE_H_
+#endif  // TVM_TOPI_GENERIC_INJECTIVE_H_

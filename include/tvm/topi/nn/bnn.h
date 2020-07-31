@@ -122,4 +122,4 @@ inline tvm::te::Tensor binary_dense(const tvm::te::Tensor& data, const tvm::te::
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_BNN_H_
+#endif  // TVM_TOPI_NN_BNN_H_

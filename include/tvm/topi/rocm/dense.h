@@ -97,4 +97,4 @@ inline Schedule schedule_dense(const Target& target, const Array<Tensor>& outs) 
 }  // namespace rocm
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_ROCM_DENSE_H_
+#endif  // TVM_TOPI_ROCM_DENSE_H_

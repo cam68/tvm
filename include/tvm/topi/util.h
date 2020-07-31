@@ -45,4 +45,4 @@ inline Array<Integer> ArrayOrInt(TVMArgValue arg) {
 }
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_UTIL_H_
+#endif  // TVM_TOPI_UTIL_H_

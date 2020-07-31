@@ -49,4 +49,4 @@ inline IterVar Fuse(Stage stage, const Array<IterVar>& args) {
 }  // namespace detail
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_DETAIL_FUSE_H_
+#endif  // TVM_TOPI_DETAIL_FUSE_H_

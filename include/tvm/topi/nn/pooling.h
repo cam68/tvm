@@ -845,4 +845,4 @@ inline Tensor pool3d(const Tensor& x, const Array<PrimExpr>& kernel_size,
 }  // namespace nn
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_NN_POOLING_H_
+#endif  // TVM_TOPI_NN_POOLING_H_

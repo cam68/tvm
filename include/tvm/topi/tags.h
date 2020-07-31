@@ -55,4 +55,4 @@ inline bool is_injective(std::string tag) {
 }  // namespace topi
 }  // namespace tvm
 
-#endif // TVM_TOPI_TAGS_H_
+#endif  // TVM_TOPI_TAGS_H_

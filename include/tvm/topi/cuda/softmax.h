@@ -100,4 +100,4 @@ inline Schedule schedule_softmax(const Target& target, const Array<Tensor>& outs
 }  // namespace cuda
 }  // namespace topi
 }  // namespace tvm
-#endif // TVM_TOPI_CUDA_SOFTMAX_H_
+#endif  // TVM_TOPI_CUDA_SOFTMAX_H_
