@@ -21,14 +21,15 @@
  * \file array_utils.h
  * \brief Utility functions for handling arrays
  */
-#ifndef TOPI_DETAIL_ARRAY_UTILS_H_
-#define TOPI_DETAIL_ARRAY_UTILS_H_
+#ifndef TVM_TOPI_DETAIL_ARRAY_UTILS_H_
+#define TVM_TOPI_DETAIL_ARRAY_UTILS_H_
 
 #include <tvm/te/operation.h>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -51,4 +52,5 @@ inline bool contains(Array<T> array, T item) {
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_ARRAY_UTILS_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_ARRAY_UTILS_H_

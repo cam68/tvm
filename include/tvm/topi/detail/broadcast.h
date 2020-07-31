@@ -21,8 +21,8 @@
  * \brief Detail broadcast.
  * \file topi/detail/broadcast.h
  */
-#ifndef TOPI_DETAIL_BROADCAST_H_
-#define TOPI_DETAIL_BROADCAST_H_
+#ifndef TVM_TOPI_DETAIL_BROADCAST_H_
+#define TVM_TOPI_DETAIL_BROADCAST_H_
 
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/te/operation.h>
@@ -31,6 +31,7 @@
 #include <deque>
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace detail {
 
@@ -136,5 +137,6 @@ inline tvm::te::Tensor WithBroadcast(FBinaryExpr op, const tvm::te::Tensor& A,
 
 }  // namespace detail
 }  // namespace topi
+}  // namespace tvm
 
-#endif  // TOPI_DETAIL_BROADCAST_H_
+#endif // TVM_TOPI_DETAIL_BROADCAST_H_

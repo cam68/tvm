@@ -21,8 +21,8 @@
  * \brief Pooling op constructions
  * \file nn/pooling.h
  */
-#ifndef TOPI_NN_POOLING_H_
-#define TOPI_NN_POOLING_H_
+#ifndef TVM_TOPI_NN_POOLING_H_
+#define TVM_TOPI_NN_POOLING_H_
 
 #include <tvm/topi/detail/pad_utils.h>
 #include <tvm/topi/nn.h>
@@ -34,9 +34,10 @@
 #include <string>
 #include <vector>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*! \brief Pooling type */
@@ -843,4 +844,5 @@ inline Tensor pool3d(const Tensor& x, const Array<PrimExpr>& kernel_size,
 
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_POOLING_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_POOLING_H_

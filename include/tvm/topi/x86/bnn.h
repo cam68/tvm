@@ -21,16 +21,17 @@
  * \file x86/bnn.h
  * \brief x86 schedule for binary operations
  */
-#ifndef TOPI_X86_BNN_H_
-#define TOPI_X86_BNN_H_
+#ifndef TVM_TOPI_X86_BNN_H_
+#define TVM_TOPI_X86_BNN_H_
 
 #include <tvm/topi/detail/fuse.h>
 #include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 namespace x86 {
@@ -126,4 +127,5 @@ inline Schedule schedule_binary_dense(const Target& target, const Array<Tensor>&
 
 }  // namespace x86
 }  // namespace topi
-#endif  // TOPI_X86_BNN_H_
+}  // namespace tvm
+#endif // TVM_TOPI_X86_BNN_H_

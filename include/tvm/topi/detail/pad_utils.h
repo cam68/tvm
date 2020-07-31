@@ -21,8 +21,8 @@
  * \file pad_utils.h
  * \brief Padding helpers
  */
-#ifndef TOPI_DETAIL_PAD_UTILS_H_
-#define TOPI_DETAIL_PAD_UTILS_H_
+#ifndef TVM_TOPI_DETAIL_PAD_UTILS_H_
+#define TVM_TOPI_DETAIL_PAD_UTILS_H_
 
 #include <tvm/te/operation.h>
 #include <tvm/tir/expr.h>
@@ -30,9 +30,10 @@
 
 #include <vector>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -56,4 +57,5 @@ inline Array<PrimExpr> GetPadTuple(PrimExpr pad_h, PrimExpr pad_w) {
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_PAD_UTILS_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_PAD_UTILS_H_

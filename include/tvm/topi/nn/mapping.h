@@ -21,17 +21,18 @@
  * \brief Mapping op constructions
  * \file nn/mapping.h
  */
-#ifndef TOPI_NN_MAPPING_H_
-#define TOPI_NN_MAPPING_H_
+#ifndef TVM_TOPI_NN_MAPPING_H_
+#define TVM_TOPI_NN_MAPPING_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/te/operation.h>
 
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -72,4 +73,5 @@ inline Tensor scale_shift_nhwc(const Tensor& x, const Tensor& scale, const Tenso
 
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_MAPPING_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_MAPPING_H_

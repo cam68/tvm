@@ -21,15 +21,16 @@
  * \brief Topi utility function
  * \file topi/util.h
  */
-#ifndef TOPI_UTIL_H_
-#define TOPI_UTIL_H_
+#ifndef TVM_TOPI_UTIL_H_
+#define TVM_TOPI_UTIL_H_
 
 #include <tvm/ir/expr.h>
 #include <tvm/runtime/packed_func.h>
 
+namespace tvm {
 namespace topi {
 
-using namespace tvm;
+
 using namespace tvm::runtime;
 
 /*! \brief Canonicalize an argument that may be Array<Expr> or int to Array<Expr> */
@@ -43,4 +44,5 @@ inline Array<Integer> ArrayOrInt(TVMArgValue arg) {
   }
 }
 }  // namespace topi
-#endif  // TOPI_UTIL_H_
+}  // namespace tvm
+#endif // TVM_TOPI_UTIL_H_

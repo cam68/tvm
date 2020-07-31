@@ -21,15 +21,16 @@
  * \brief External function interface to rocBLAS libraries
  * \file tags.h
  */
-#ifndef TOPI_CONTRIB_ROCBLAS_H_
-#define TOPI_CONTRIB_ROCBLAS_H_
+#ifndef TVM_TOPI_CONTRIB_ROCBLAS_H_
+#define TVM_TOPI_CONTRIB_ROCBLAS_H_
 
 #include <tvm/te/operation.h>
 #include <tvm/topi/detail/extern.h>
 
+namespace tvm {
 namespace topi {
 namespace contrib {
-using namespace tvm;
+
 using namespace tvm::te;
 /*!
  * \brief Create an op that multiplies lhs and rhs with rocBLAS
@@ -56,5 +57,6 @@ inline Tensor rocblas_matmul(const Tensor& lhs, const Tensor& rhs, bool transa, 
 
 }  // namespace contrib
 }  // namespace topi
+}  // namespace tvm
 
-#endif  // TOPI_CONTRIB_ROCBLAS_H_
+#endif // TVM_TOPI_CONTRIB_ROCBLAS_H_

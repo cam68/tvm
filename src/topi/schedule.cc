@@ -48,6 +48,7 @@
 #include <tvm/runtime/registry.h>
 #include <tvm/target/generic_func.h>
 
+namespace tvm {
 namespace topi {
 
 using namespace tvm;
@@ -319,3 +320,4 @@ TVM_REGISTER_GENERIC_FUNC(dense)
     .register_func({"rocm"}, WrapDenseOp(topi::rocm::dense_rocm));
 
 }  // namespace topi
+}  // namespace tvm

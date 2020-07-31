@@ -21,8 +21,8 @@
  * \brief NN op constructions
  * \file topi/nn.h
  */
-#ifndef TOPI_NN_H_
-#define TOPI_NN_H_
+#ifndef TVM_TOPI_NN_H_
+#define TVM_TOPI_NN_H_
 
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/tags.h>
@@ -34,8 +34,9 @@
 #include <algorithm>
 #include <string>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -447,4 +448,5 @@ inline tvm::te::Tensor group_conv2d_ngchw(const tvm::te::Tensor& I, const tvm::t
 }
 
 }  // namespace topi
-#endif  // TOPI_NN_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_H_

@@ -21,15 +21,16 @@
  * \brief External function interface to cuBLAS libraries
  * \file cublas.h
  */
-#ifndef TOPI_CONTRIB_CUBLAS_H_
-#define TOPI_CONTRIB_CUBLAS_H_
+#ifndef TVM_TOPI_CONTRIB_CUBLAS_H_
+#define TVM_TOPI_CONTRIB_CUBLAS_H_
 
 #include <tvm/topi/detail/extern.h>
 #include <tvm/te/operation.h>
 
+namespace tvm {
 namespace topi {
 namespace contrib {
-using namespace tvm;
+
 using namespace tvm::te;
 using namespace topi::detail;
 /*!
@@ -82,5 +83,6 @@ inline Tensor cublas_batch_matmul(const Tensor& lhs, const Tensor& rhs, bool tra
 
 }  // namespace contrib
 }  // namespace topi
+}  // namespace tvm
 
-#endif  // TOPI_CONTRIB_CUBLAS_H_
+#endif // TVM_TOPI_CONTRIB_CUBLAS_H_

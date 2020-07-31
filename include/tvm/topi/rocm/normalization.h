@@ -21,15 +21,16 @@
  * \file rocm/normalization.h
  * \brief rocm schedule for LRN and l2 normalization operations
  */
-#ifndef TOPI_ROCM_NORMALIZATION_H_
-#define TOPI_ROCM_NORMALIZATION_H_
+#ifndef TVM_TOPI_ROCM_NORMALIZATION_H_
+#define TVM_TOPI_ROCM_NORMALIZATION_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 namespace rocm {
 /*!
@@ -41,4 +42,5 @@ inline Schedule schedule_lrn(const Array<Tensor>& outs) { return topi::cuda::sch
 
 }  // namespace rocm
 }  // namespace topi
-#endif  // TOPI_ROCM_NORMALIZATION_H_
+}  // namespace tvm
+#endif // TVM_TOPI_ROCM_NORMALIZATION_H_

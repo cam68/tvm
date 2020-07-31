@@ -25,6 +25,7 @@
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
 
+namespace tvm {
 namespace topi {
 
 using namespace tvm;
@@ -155,3 +156,4 @@ TVM_REGISTER_GLOBAL("topi.bitwise_not").set_body([](TVMArgs args, TVMRetValue* r
 });
 
 }  // namespace topi
+}  // namespace tvm

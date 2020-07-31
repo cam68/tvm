@@ -35,6 +35,7 @@
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
 
+namespace tvm {
 namespace topi {
 
 using namespace tvm;
@@ -151,3 +152,4 @@ TVM_REGISTER_GLOBAL("topi.nn.binary_dense").set_body([](TVMArgs args, TVMRetValu
 });
 
 }  // namespace topi
+}  // namespace tvm

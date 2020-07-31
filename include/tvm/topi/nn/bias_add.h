@@ -21,8 +21,8 @@
  * \brief bias_add op constructions
  * \file nn/bias_add.h
  */
-#ifndef TOPI_NN_BIAS_ADD_H_
-#define TOPI_NN_BIAS_ADD_H_
+#ifndef TVM_TOPI_NN_BIAS_ADD_H_
+#define TVM_TOPI_NN_BIAS_ADD_H_
 
 #include <tvm/topi/broadcast.h>
 #include <tvm/topi/tags.h>
@@ -31,6 +31,7 @@
 
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace nn {
 
@@ -53,4 +54,5 @@ inline tvm::te::Tensor bias_add(const tvm::te::Tensor& data, const tvm::te::Tens
 }
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_BIAS_ADD_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_BIAS_ADD_H_

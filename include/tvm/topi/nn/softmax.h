@@ -21,8 +21,8 @@
  * \brief Softmax op constructions
  * \file nn/softmax.h
  */
-#ifndef TOPI_NN_SOFTMAX_H_
-#define TOPI_NN_SOFTMAX_H_
+#ifndef TVM_TOPI_NN_SOFTMAX_H_
+#define TVM_TOPI_NN_SOFTMAX_H_
 
 #include <tvm/topi/reduction.h>
 #include <tvm/topi/tags.h>
@@ -31,9 +31,10 @@
 #include <algorithm>
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -143,4 +144,5 @@ inline Tensor log_softmax(const Tensor& x, std::string name = "tensor",
 
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_SOFTMAX_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_SOFTMAX_H_

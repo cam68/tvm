@@ -21,8 +21,8 @@
  * \file topi/transform.h
  * \brief Transform op constructors
  */
-#ifndef TOPI_TRANSFORM_H_
-#define TOPI_TRANSFORM_H_
+#ifndef TVM_TOPI_TRANSFORM_H_
+#define TVM_TOPI_TRANSFORM_H_
 
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/detail/ravel_unravel.h>
@@ -38,8 +38,9 @@
 #include <unordered_set>
 #include <vector>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 using namespace topi::detail;
 
@@ -1508,4 +1509,5 @@ inline Tensor sparse_to_dense(const Tensor& sparse_indices, const Array<Integer>
 }
 
 }  // namespace topi
-#endif  // TOPI_TRANSFORM_H_
+}  // namespace tvm
+#endif // TVM_TOPI_TRANSFORM_H_

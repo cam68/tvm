@@ -21,8 +21,8 @@
  * \brief Broadcast op constructions
  * \file topi/broadcast.h
  */
-#ifndef TOPI_BROADCAST_H_
-#define TOPI_BROADCAST_H_
+#ifndef TVM_TOPI_BROADCAST_H_
+#define TVM_TOPI_BROADCAST_H_
 
 #include <tvm/topi/detail/broadcast.h>
 #include <tvm/topi/detail/constant_utils.h>
@@ -31,6 +31,7 @@
 #include <algorithm>
 #include <string>
 
+namespace tvm {
 namespace topi {
 
 /*!
@@ -429,5 +430,6 @@ TOPI_DEFINE_BCAST_OP(greater_equal, { return (a >= b); });
 TOPI_DEFINE_BCAST_OP(less_equal, { return (a <= b); });
 
 }  // namespace topi
+}  // namespace tvm
 
-#endif  // TOPI_BROADCAST_H_
+#endif // TVM_TOPI_BROADCAST_H_

@@ -21,8 +21,8 @@
  * \file detail/extern.h
  * \brief Helpers for using external functions
  */
-#ifndef TOPI_DETAIL_EXTERN_H_
-#define TOPI_DETAIL_EXTERN_H_
+#ifndef TVM_TOPI_DETAIL_EXTERN_H_
+#define TVM_TOPI_DETAIL_EXTERN_H_
 
 #include <tvm/te/operation.h>
 #include <tvm/tir/builtin.h>
@@ -30,9 +30,10 @@
 #include <string>
 #include <vector>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -145,4 +146,5 @@ inline PrimExpr call_packed(Array<PrimExpr> args) {
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_EXTERN_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_EXTERN_H_

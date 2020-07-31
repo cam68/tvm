@@ -21,16 +21,17 @@
  * \file ravel_unravel.h
  * \brief Index ravel and unraval operations
  */
-#ifndef TOPI_DETAIL_RAVEL_UNRAVEL_H_
-#define TOPI_DETAIL_RAVEL_UNRAVEL_H_
+#ifndef TVM_TOPI_DETAIL_RAVEL_UNRAVEL_H_
+#define TVM_TOPI_DETAIL_RAVEL_UNRAVEL_H_
 
 #include <tvm/te/operation.h>
 
 #include <vector>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -76,4 +77,5 @@ inline Array<PrimExpr> UnravelIndex(PrimExpr idx, Array<PrimExpr> shape) {
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_RAVEL_UNRAVEL_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_RAVEL_UNRAVEL_H_

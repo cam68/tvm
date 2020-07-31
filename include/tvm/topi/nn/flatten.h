@@ -21,8 +21,8 @@
  * \brief Softmax op constructions
  * \file nn/flatten.h
  */
-#ifndef TOPI_NN_FLATTEN_H_
-#define TOPI_NN_FLATTEN_H_
+#ifndef TVM_TOPI_NN_FLATTEN_H_
+#define TVM_TOPI_NN_FLATTEN_H_
 
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/tags.h>
@@ -31,9 +31,10 @@
 #include <string>
 #include <vector>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -79,4 +80,5 @@ inline Tensor flatten(const Tensor& x, std::string name = "tensor", std::string 
 
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_FLATTEN_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_FLATTEN_H_

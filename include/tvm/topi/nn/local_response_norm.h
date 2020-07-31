@@ -21,17 +21,18 @@
  * \brief local response normalization op constructions
  * \file nn/local_response_norm.h
  */
-#ifndef TOPI_NN_LOCAL_RESPONSE_NORM_H_
-#define TOPI_NN_LOCAL_RESPONSE_NORM_H_
+#ifndef TVM_TOPI_NN_LOCAL_RESPONSE_NORM_H_
+#define TVM_TOPI_NN_LOCAL_RESPONSE_NORM_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/te/operation.h>
 
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -78,4 +79,5 @@ inline Tensor lrn(const Tensor& data, int size, int axis = 1, float alpha = 0.00
 }
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_LOCAL_RESPONSE_NORM_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_LOCAL_RESPONSE_NORM_H_

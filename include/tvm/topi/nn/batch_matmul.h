@@ -21,17 +21,18 @@
  * \brief Batch matmul op constructions
  * \file nn/batch_matmul.h
  */
-#ifndef TOPI_NN_BATCH_MATMUL_H_
-#define TOPI_NN_BATCH_MATMUL_H_
+#ifndef TVM_TOPI_NN_BATCH_MATMUL_H_
+#define TVM_TOPI_NN_BATCH_MATMUL_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/te/operation.h>
 
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -61,5 +62,6 @@ inline tvm::te::Tensor batch_matmul(const tvm::te::Tensor& x, const tvm::te::Ten
 
 }  // namespace nn
 }  // namespace topi
+}  // namespace tvm
 
-#endif  // TOPI_NN_BATCH_MATMUL_H_
+#endif // TVM_TOPI_NN_BATCH_MATMUL_H_

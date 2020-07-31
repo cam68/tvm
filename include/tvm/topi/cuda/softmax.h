@@ -21,8 +21,8 @@
  * \file cuda/injective.h
  * \brief CUDA schedule for injective operations
  */
-#ifndef TOPI_CUDA_SOFTMAX_H_
-#define TOPI_CUDA_SOFTMAX_H_
+#ifndef TVM_TOPI_CUDA_SOFTMAX_H_
+#define TVM_TOPI_CUDA_SOFTMAX_H_
 
 #include <tvm/topi/detail/fuse.h>
 #include <tvm/topi/tags.h>
@@ -30,8 +30,9 @@
 #include <tvm/te/operation.h>
 #include <tvm/te/schedule_pass.h>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 namespace cuda {
@@ -98,4 +99,5 @@ inline Schedule schedule_softmax(const Target& target, const Array<Tensor>& outs
 
 }  // namespace cuda
 }  // namespace topi
-#endif  // TOPI_CUDA_SOFTMAX_H_
+}  // namespace tvm
+#endif // TVM_TOPI_CUDA_SOFTMAX_H_

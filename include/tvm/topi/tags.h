@@ -21,11 +21,12 @@
  * \brief Tag definitions
  * \file tags.h
  */
-#ifndef TOPI_TAGS_H_
-#define TOPI_TAGS_H_
+#ifndef TVM_TOPI_TAGS_H_
+#define TVM_TOPI_TAGS_H_
 
 #include <string>
 
+namespace tvm {
 namespace topi {
 
 constexpr auto kElementWise = "elemwise";
@@ -52,5 +53,6 @@ inline bool is_injective(std::string tag) {
 }
 
 }  // namespace topi
+}  // namespace tvm
 
-#endif  // TOPI_TAGS_H_
+#endif // TVM_TOPI_TAGS_H_

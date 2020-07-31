@@ -21,8 +21,8 @@
  * \file generic/extern.h
  * \brief Schedule for extern followed by injective ops
  */
-#ifndef TOPI_GENERIC_EXTERN_H_
-#define TOPI_GENERIC_EXTERN_H_
+#ifndef TVM_TOPI_GENERIC_EXTERN_H_
+#define TVM_TOPI_GENERIC_EXTERN_H_
 
 #include <tvm/topi/detail/fuse.h>
 #include <tvm/topi/generic/injective.h>
@@ -31,8 +31,9 @@
 #include <tvm/te/operation.h>
 #include <tvm/te/schedule_pass.h>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 namespace generic {
@@ -64,4 +65,5 @@ inline Schedule schedule_extern(const Target& target, const Array<Tensor>& outs)
 
 }  // namespace generic
 }  // namespace topi
-#endif  // TOPI_GENERIC_EXTERN_H_
+}  // namespace tvm
+#endif // TVM_TOPI_GENERIC_EXTERN_H_

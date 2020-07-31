@@ -21,14 +21,15 @@
  * \file fuse.h
  * \brief Fuse operation
  */
-#ifndef TOPI_DETAIL_FUSE_H_
-#define TOPI_DETAIL_FUSE_H_
+#ifndef TVM_TOPI_DETAIL_FUSE_H_
+#define TVM_TOPI_DETAIL_FUSE_H_
 
 #include <tvm/te/operation.h>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -47,4 +48,5 @@ inline IterVar Fuse(Stage stage, const Array<IterVar>& args) {
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_FUSE_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_FUSE_H_

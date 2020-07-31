@@ -21,8 +21,8 @@
  * \file elemwise.h
  * \brief Elementwise op constructions
  */
-#ifndef TOPI_ELEMWISE_H_
-#define TOPI_ELEMWISE_H_
+#ifndef TVM_TOPI_ELEMWISE_H_
+#define TVM_TOPI_ELEMWISE_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/tir/builtin.h>
@@ -33,8 +33,9 @@
 
 #include "broadcast.h"
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 // Unary intrinsic operators
@@ -525,4 +526,5 @@ inline Tensor fast_erf(const Tensor& x, std::string name = "T_fast_erf",
 }
 
 }  // namespace topi
-#endif  // TOPI_ELEMWISE_H_
+}  // namespace tvm
+#endif // TVM_TOPI_ELEMWISE_H_

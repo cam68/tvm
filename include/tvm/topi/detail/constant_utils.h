@@ -21,8 +21,8 @@
  * \file constant_utils.h
  * \brief Utility functions for handling constants in TVM expressions
  */
-#ifndef TOPI_DETAIL_CONSTANT_UTILS_H_
-#define TOPI_DETAIL_CONSTANT_UTILS_H_
+#ifndef TVM_TOPI_DETAIL_CONSTANT_UTILS_H_
+#define TVM_TOPI_DETAIL_CONSTANT_UTILS_H_
 
 #include <tvm/arith/analyzer.h>
 #include <tvm/te/operation.h>
@@ -32,9 +32,10 @@
 #include <string>
 #include <vector>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -122,4 +123,5 @@ inline bool EqualCheck(PrimExpr lhs, PrimExpr rhs) {
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_CONSTANT_UTILS_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_CONSTANT_UTILS_H_

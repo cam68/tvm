@@ -21,8 +21,8 @@
  * \file topi/reduction.h
  * \brief Reduction op constructors
  */
-#ifndef TOPI_REDUCTION_H_
-#define TOPI_REDUCTION_H_
+#ifndef TVM_TOPI_REDUCTION_H_
+#define TVM_TOPI_REDUCTION_H_
 
 #include <tvm/topi/broadcast.h>
 #include <tvm/topi/detail/constant_utils.h>
@@ -37,8 +37,9 @@
 #include <string>
 #include <vector>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*! \brief The operation to use for CommReduce */
@@ -510,4 +511,5 @@ inline Tensor prod(const Tensor& data, const Array<Integer>& axis, bool keepdims
 }
 
 }  // namespace topi
-#endif  // TOPI_REDUCTION_H_
+}  // namespace tvm
+#endif // TVM_TOPI_REDUCTION_H_

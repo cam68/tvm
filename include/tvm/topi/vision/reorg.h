@@ -21,8 +21,8 @@
  * \brief Reorg op constructions
  * \file vision/reorg.h
  */
-#ifndef TOPI_VISION_REORG_H_
-#define TOPI_VISION_REORG_H_
+#ifndef TVM_TOPI_VISION_REORG_H_
+#define TVM_TOPI_VISION_REORG_H_
 
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/reduction.h>
@@ -33,9 +33,10 @@
 #include <algorithm>
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace vision {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -76,4 +77,5 @@ inline Tensor reorg(const Tensor& data, int stride = 1, std::string name = "tens
 }
 }  // namespace vision
 }  // namespace topi
-#endif  // TOPI_VISION_REORG_H_
+}  // namespace tvm
+#endif // TVM_TOPI_VISION_REORG_H_

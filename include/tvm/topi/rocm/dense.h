@@ -21,8 +21,8 @@
  * \file rocm/dense.h
  * \brief rocm schedule for dense operation
  */
-#ifndef TOPI_ROCM_DENSE_H_
-#define TOPI_ROCM_DENSE_H_
+#ifndef TVM_TOPI_ROCM_DENSE_H_
+#define TVM_TOPI_ROCM_DENSE_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
@@ -34,8 +34,9 @@
 #include <tvm/topi/generic/extern.h>
 #include <tvm/topi/nn/dense.h>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 
 namespace rocm {
@@ -95,4 +96,5 @@ inline Schedule schedule_dense(const Target& target, const Array<Tensor>& outs) 
 
 }  // namespace rocm
 }  // namespace topi
-#endif  // TOPI_ROCM_DENSE_H_
+}  // namespace tvm
+#endif // TVM_TOPI_ROCM_DENSE_H_

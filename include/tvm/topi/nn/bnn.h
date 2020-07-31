@@ -21,8 +21,8 @@
  * \brief Binary op constructions
  * \file nn/bnn.h
  */
-#ifndef TOPI_NN_BNN_H_
-#define TOPI_NN_BNN_H_
+#ifndef TVM_TOPI_NN_BNN_H_
+#define TVM_TOPI_NN_BNN_H_
 
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/tags.h>
@@ -31,9 +31,10 @@
 
 #include <string>
 
+namespace tvm {
 namespace topi {
 namespace nn {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -120,4 +121,5 @@ inline tvm::te::Tensor binary_dense(const tvm::te::Tensor& data, const tvm::te::
 
 }  // namespace nn
 }  // namespace topi
-#endif  // TOPI_NN_BNN_H_
+}  // namespace tvm
+#endif // TVM_TOPI_NN_BNN_H_

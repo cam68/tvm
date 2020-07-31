@@ -26,6 +26,7 @@
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
 
+namespace tvm {
 namespace topi {
 
 using namespace tvm;
@@ -76,3 +77,4 @@ TVM_REGISTER_GLOBAL("topi.broadcast_to").set_body([](TVMArgs args, TVMRetValue* 
 });
 
 }  // namespace topi
+}  // namespace tvm

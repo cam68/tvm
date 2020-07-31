@@ -21,14 +21,15 @@
  * \file tensor_utils.h
  * \brief Utility functions for handling tensor
  */
-#ifndef TOPI_DETAIL_TENSOR_UTILS_H_
-#define TOPI_DETAIL_TENSOR_UTILS_H_
+#ifndef TVM_TOPI_DETAIL_TENSOR_UTILS_H_
+#define TVM_TOPI_DETAIL_TENSOR_UTILS_H_
 
 #include <tvm/te/operation.h>
 
+namespace tvm {
 namespace topi {
 namespace detail {
-using namespace tvm;
+
 using namespace tvm::te;
 
 /*!
@@ -90,4 +91,5 @@ inline PrimExpr bilinear_sample_nchw(const Tensor& input, const Array<PrimExpr>&
 
 }  // namespace detail
 }  // namespace topi
-#endif  // TOPI_DETAIL_TENSOR_UTILS_H_
+}  // namespace tvm
+#endif // TVM_TOPI_DETAIL_TENSOR_UTILS_H_

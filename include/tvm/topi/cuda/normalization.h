@@ -21,16 +21,17 @@
  * \file cuda/normalization.h
  * \brief CUDA schedule for LRN and l2 normalization operations
  */
-#ifndef TOPI_CUDA_NORMALIZATION_H_
-#define TOPI_CUDA_NORMALIZATION_H_
+#ifndef TVM_TOPI_CUDA_NORMALIZATION_H_
+#define TVM_TOPI_CUDA_NORMALIZATION_H_
 
 #include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
 #include <tvm/te/schedule_pass.h>
 
+namespace tvm {
 namespace topi {
-using namespace tvm;
+
 using namespace tvm::te;
 namespace cuda {
 /*!
@@ -70,4 +71,5 @@ inline Schedule schedule_lrn(const Array<Tensor>& outs) {
 
 }  // namespace cuda
 }  // namespace topi
-#endif  // TOPI_CUDA_NORMALIZATION_H_
+}  // namespace tvm
+#endif // TVM_TOPI_CUDA_NORMALIZATION_H_
