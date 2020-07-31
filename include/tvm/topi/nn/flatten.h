@@ -24,9 +24,9 @@
 #ifndef TVM_TOPI_NN_FLATTEN_H_
 #define TVM_TOPI_NN_FLATTEN_H_
 
+#include <tvm/te/operation.h>
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/tags.h>
-#include <tvm/te/operation.h>
 
 #include <string>
 #include <vector>

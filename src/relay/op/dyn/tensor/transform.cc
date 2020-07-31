@@ -23,12 +23,12 @@
  */
 #include "transform.h"
 
-#include <tvm/topi/broadcast.h>
-#include <tvm/topi/transform.h>
 #include <tvm/relay/attrs/transform.h>
 #include <tvm/relay/op.h>
 #include <tvm/relay/op_attr_types.h>
 #include <tvm/runtime/registry.h>
+#include <tvm/topi/broadcast.h>
+#include <tvm/topi/transform.h>
 
 #include <utility>
 #include <vector>

@@ -24,9 +24,9 @@
 #ifndef TVM_TOPI_NN_DILATE_H_
 #define TVM_TOPI_NN_DILATE_H_
 
-#include <tvm/topi/tags.h>
 #include <tvm/arith/analyzer.h>
 #include <tvm/te/operation.h>
+#include <tvm/topi/tags.h>
 
 #include <string>
 

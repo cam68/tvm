@@ -21,9 +21,9 @@
  * \brief Registration of elemwise operators
  * \file elemwise.cc
  */
-#include <tvm/topi/elemwise.h>
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
+#include <tvm/topi/elemwise.h>
 
 namespace tvm {
 namespace topi {

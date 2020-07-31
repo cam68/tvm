@@ -24,8 +24,8 @@
 #ifndef TVM_TOPI_CONTRIB_CUBLAS_H_
 #define TVM_TOPI_CONTRIB_CUBLAS_H_
 
-#include <tvm/topi/detail/extern.h>
 #include <tvm/te/operation.h>
+#include <tvm/topi/detail/extern.h>
 
 namespace tvm {
 namespace topi {

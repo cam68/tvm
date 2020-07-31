@@ -24,10 +24,10 @@
 #ifndef TVM_TOPI_CUDA_NORMALIZATION_H_
 #define TVM_TOPI_CUDA_NORMALIZATION_H_
 
-#include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
 #include <tvm/te/schedule_pass.h>
+#include <tvm/topi/tags.h>
 
 namespace tvm {
 namespace topi {

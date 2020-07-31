@@ -24,9 +24,9 @@
 #ifndef TVM_TOPI_NN_SOFTMAX_H_
 #define TVM_TOPI_NN_SOFTMAX_H_
 
+#include <tvm/te/operation.h>
 #include <tvm/topi/reduction.h>
 #include <tvm/topi/tags.h>
-#include <tvm/te/operation.h>
 
 #include <algorithm>
 #include <string>

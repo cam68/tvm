@@ -21,10 +21,10 @@
  * \brief Registration of reduction operators
  * \file reduction.cc
  */
-#include <tvm/topi/reduction.h>
-#include <tvm/topi/util.h>
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
+#include <tvm/topi/reduction.h>
+#include <tvm/topi/util.h>
 
 namespace tvm {
 namespace topi {

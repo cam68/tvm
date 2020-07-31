@@ -24,11 +24,11 @@
 #ifndef TVM_TOPI_ROCM_REDUCTION_H_
 #define TVM_TOPI_ROCM_REDUCTION_H_
 
-#include <tvm/topi/detail/fuse.h>
-#include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
 #include <tvm/topi/cuda/reduction.h>
+#include <tvm/topi/detail/fuse.h>
+#include <tvm/topi/tags.h>
 
 namespace tvm {
 namespace topi {

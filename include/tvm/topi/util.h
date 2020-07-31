@@ -30,7 +30,6 @@
 namespace tvm {
 namespace topi {
 
-
 using namespace tvm::runtime;
 
 /*! \brief Canonicalize an argument that may be Array<Expr> or int to Array<Expr> */

@@ -21,10 +21,10 @@
  * \brief Registration of transform operators
  * \file transform.cc
  */
-#include <tvm/topi/transform.h>
-#include <tvm/topi/util.h>
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
+#include <tvm/topi/transform.h>
+#include <tvm/topi/util.h>
 
 namespace tvm {
 namespace topi {

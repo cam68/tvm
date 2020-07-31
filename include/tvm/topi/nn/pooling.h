@@ -24,11 +24,11 @@
 #ifndef TVM_TOPI_NN_POOLING_H_
 #define TVM_TOPI_NN_POOLING_H_
 
+#include <tvm/arith/analyzer.h>
 #include <tvm/topi/detail/pad_utils.h>
 #include <tvm/topi/nn.h>
 #include <tvm/topi/reduction.h>
 #include <tvm/topi/tags.h>
-#include <tvm/arith/analyzer.h>
 
 #include <algorithm>
 #include <string>

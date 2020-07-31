@@ -24,12 +24,11 @@
 #ifndef TVM_TOPI_ROCM_INJECTIVE_H_
 #define TVM_TOPI_ROCM_INJECTIVE_H_
 
-#include <tvm/topi/detail/fuse.h>
-#include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
-
 #include <tvm/topi/cuda/injective.h>
+#include <tvm/topi/detail/fuse.h>
+#include <tvm/topi/tags.h>
 
 namespace tvm {
 namespace topi {

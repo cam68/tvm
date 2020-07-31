@@ -24,11 +24,11 @@
 #ifndef TVM_TOPI_VISION_REORG_H_
 #define TVM_TOPI_VISION_REORG_H_
 
+#include <tvm/te/operation.h>
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/reduction.h>
 #include <tvm/topi/tags.h>
 #include <tvm/topi/transform.h>
-#include <tvm/te/operation.h>
 
 #include <algorithm>
 #include <string>

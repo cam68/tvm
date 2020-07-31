@@ -24,10 +24,10 @@
 #ifndef TVM_TOPI_NN_BIAS_ADD_H_
 #define TVM_TOPI_NN_BIAS_ADD_H_
 
+#include <tvm/te/operation.h>
 #include <tvm/topi/broadcast.h>
 #include <tvm/topi/tags.h>
 #include <tvm/topi/transform.h>
-#include <tvm/te/operation.h>
 
 #include <string>
 

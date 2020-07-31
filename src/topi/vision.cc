@@ -21,9 +21,9 @@
  * \brief Registration of vision operators
  * \file vision.cc
  */
-#include <tvm/topi/vision/reorg.h>
 #include <tvm/runtime/packed_func.h>
 #include <tvm/runtime/registry.h>
+#include <tvm/topi/vision/reorg.h>
 
 namespace tvm {
 namespace topi {

@@ -24,12 +24,12 @@
 #ifndef TVM_TOPI_NN_H_
 #define TVM_TOPI_NN_H_
 
-#include <tvm/topi/detail/constant_utils.h>
-#include <tvm/topi/tags.h>
 #include <tvm/arith/analyzer.h>
 #include <tvm/te/operation.h>
 #include <tvm/tir/expr.h>
 #include <tvm/tir/op.h>
+#include <tvm/topi/detail/constant_utils.h>
+#include <tvm/topi/tags.h>
 
 #include <algorithm>
 #include <string>

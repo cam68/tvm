@@ -24,8 +24,8 @@
 #ifndef TVM_TOPI_DETAIL_BROADCAST_H_
 #define TVM_TOPI_DETAIL_BROADCAST_H_
 
-#include <tvm/topi/detail/constant_utils.h>
 #include <tvm/te/operation.h>
+#include <tvm/topi/detail/constant_utils.h>
 
 #include <algorithm>
 #include <deque>

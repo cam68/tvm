@@ -24,13 +24,13 @@
 #ifndef TVM_TOPI_REDUCTION_H_
 #define TVM_TOPI_REDUCTION_H_
 
+#include <tvm/te/operation.h>
 #include <tvm/topi/broadcast.h>
 #include <tvm/topi/detail/constant_utils.h>
 #include <tvm/topi/detail/ravel_unravel.h>
 #include <tvm/topi/elemwise.h>
 #include <tvm/topi/tags.h>
 #include <tvm/topi/transform.h>
-#include <tvm/te/operation.h>
 
 #include <algorithm>
 #include <iterator>

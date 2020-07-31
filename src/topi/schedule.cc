@@ -23,6 +23,11 @@
  */
 #define TOPI_REDUCE_ATLEAST1D 0
 
+#include <tvm/ir/expr.h>
+#include <tvm/runtime/module.h>
+#include <tvm/runtime/packed_func.h>
+#include <tvm/runtime/registry.h>
+#include <tvm/target/generic_func.h>
 #include <tvm/topi/cuda/dense.h>
 #include <tvm/topi/cuda/injective.h>
 #include <tvm/topi/cuda/normalization.h>
@@ -42,11 +47,6 @@
 #include <tvm/topi/x86/bnn.h>
 #include <tvm/topi/x86/default.h>
 #include <tvm/topi/x86/injective.h>
-#include <tvm/ir/expr.h>
-#include <tvm/runtime/module.h>
-#include <tvm/runtime/packed_func.h>
-#include <tvm/runtime/registry.h>
-#include <tvm/target/generic_func.h>
 
 namespace tvm {
 namespace topi {

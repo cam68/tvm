@@ -24,15 +24,14 @@
 #ifndef TVM_TOPI_ROCM_DENSE_H_
 #define TVM_TOPI_ROCM_DENSE_H_
 
-#include <tvm/topi/tags.h>
 #include <tvm/target/generic_func.h>
 #include <tvm/te/operation.h>
-
 #include <tvm/topi/contrib/rocblas.h>
 #include <tvm/topi/cuda/dense.h>
 #include <tvm/topi/detail/array_utils.h>
 #include <tvm/topi/generic/extern.h>
 #include <tvm/topi/nn/dense.h>
+#include <tvm/topi/tags.h>
 
 namespace tvm {
 namespace topi {

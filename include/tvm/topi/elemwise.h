@@ -24,9 +24,9 @@
 #ifndef TVM_TOPI_ELEMWISE_H_
 #define TVM_TOPI_ELEMWISE_H_
 
-#include <tvm/topi/tags.h>
 #include <tvm/tir/builtin.h>
 #include <tvm/tir/expr.h>
+#include <tvm/topi/tags.h>
 
 #include <algorithm>
 #include <string>

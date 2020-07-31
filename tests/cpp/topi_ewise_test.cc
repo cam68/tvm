@@ -18,8 +18,8 @@
  */
 
 #include <gtest/gtest.h>
-#include <tvm/topi/elemwise.h>
 #include <tvm/te/operation.h>
+#include <tvm/topi/elemwise.h>
 
 namespace tvm {
 namespace topi {
