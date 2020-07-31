@@ -22,7 +22,7 @@
  * \brief Dialect operators for Relay VM.
  */
 
-#include <topi/elemwise.h>
+#include <tvm/topi/elemwise.h>
 #include <tvm/relay/attrs/memory.h>
 #include <tvm/relay/attrs/vm.h>
 #include <tvm/relay/expr.h>

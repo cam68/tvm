@@ -23,7 +23,7 @@
  */
 #include "compile_engine.h"
 
-#include <topi/tags.h>
+#include <tvm/topi/tags.h>
 #include <tvm/driver/driver_api.h>
 #include <tvm/ir/type_functor.h>
 #include <tvm/relay/analysis.h>

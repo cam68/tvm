@@ -22,7 +22,7 @@
  * \brief Operators for manifest shape-aware memory allocation in Relay.
  */
 
-#include <topi/elemwise.h>
+#include <tvm/topi/elemwise.h>
 #include <tvm/relay/attrs/memory.h>
 #include <tvm/relay/expr.h>
 #include <tvm/relay/op.h>

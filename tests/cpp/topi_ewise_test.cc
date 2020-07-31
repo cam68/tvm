@@ -18,7 +18,7 @@
  */
 
 #include <gtest/gtest.h>
-#include <topi/elemwise.h>
+#include <tvm/topi/elemwise.h>
 #include <tvm/te/operation.h>
 
 namespace topi {

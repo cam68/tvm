@@ -18,8 +18,8 @@
  */
 
 #include <gtest/gtest.h>
-#include <topi/broadcast.h>
-#include <topi/generic/injective.h>
+#include <tvm/topi/broadcast.h>
+#include <tvm/topi/generic/injective.h>
 #include <tvm/driver/driver_api.h>
 #include <tvm/ir/module.h>
 #include <tvm/relay/analysis.h>

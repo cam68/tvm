@@ -30,8 +30,8 @@
  *        (3) and sum them together to get the adjoint of the input itself.
  *        The three steps are computed recursively.
  */
-#include <topi/elemwise.h>
-#include <topi/transform.h>
+#include <tvm/topi/elemwise.h>
+#include <tvm/topi/transform.h>
 #include <tvm/runtime/registry.h>
 #include <tvm/te/autodiff.h>
 #include <tvm/tir/stmt_functor.h>

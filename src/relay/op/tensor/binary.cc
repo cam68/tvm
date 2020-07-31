@@ -21,7 +21,7 @@
  * \file binary.cc
  * \brief binary broadcast operators.
  */
-#include <topi/broadcast.h>
+#include <tvm/topi/broadcast.h>
 #include <tvm/relay/expr.h>
 #include <tvm/relay/op.h>
 

@@ -32,7 +32,7 @@
 #include <gtest/gtest.h>
 #include <spawn.h>
 #include <sys/wait.h>
-#include <topi/generic/injective.h>
+#include <tvm/topi/generic/injective.h>
 #include <tvm/driver/driver_api.h>
 #include <tvm/relay/analysis.h>
 #include <tvm/relay/expr.h>

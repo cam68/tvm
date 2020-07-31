@@ -23,11 +23,11 @@
  */
 #include "transform.h"
 
-#include <topi/broadcast.h>
-#include <topi/elemwise.h>
-#include <topi/nn.h>
-#include <topi/reduction.h>
-#include <topi/transform.h>
+#include <tvm/topi/broadcast.h>
+#include <tvm/topi/elemwise.h>
+#include <tvm/topi/nn.h>
+#include <tvm/topi/reduction.h>
+#include <tvm/topi/transform.h>
 #include <tvm/ir/error.h>
 #include <tvm/relay/attrs/transform.h>
 #include <tvm/relay/op.h>

@@ -245,7 +245,7 @@ list(APPEND COMPILER_SRCS ${DATATYPE_SRCS})
 
 
 file(GLOB TOPI_SRCS
-    topi/src/*.cc
+    src/topi/*.cc
 )
 
 file(GLOB RUNTIME_SRCS
@@ -341,7 +341,7 @@ else()
   set(CMAKE_CUDA_STANDARD 14)
 endif()
 
-add_library(tvm SHARED ${COMPILER_SRCS} ${RUNTIME_SRCS})
+add_library(tvm SHARED ${COMPILER_SRCS} ${RUNTIME_SRCS} ${TOPI_SRCS})
 add_library(tvm_topi SHARED ${TOPI_SRCS})
 add_library(tvm_runtime SHARED ${RUNTIME_SRCS})
 

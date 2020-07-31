@@ -23,7 +23,7 @@
  * \brief Registration of annotation operators.
  */
 
-#include <topi/elemwise.h>
+#include <tvm/topi/elemwise.h>
 #include <tvm/relay/attrs/annotation.h>
 #include <tvm/relay/expr.h>
 #include <tvm/relay/op.h>
