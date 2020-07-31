@@ -19,7 +19,7 @@ from tvm import te
 from tvm.contrib import cudnn
 from tvm.contrib.nvcc import have_fp16
 import numpy as np
-import topi.testing
+import tvm.topi.testing
 
 def verify_conv2d(data_dtype, conv_dtype, tensor_format=0, groups=1):
     in_channel = 4

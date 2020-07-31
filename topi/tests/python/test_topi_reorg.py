@@ -16,11 +16,11 @@
 # under the License.
 """Example code to do reorg."""
 import numpy as np
-import topi
-from topi.util import get_const_tuple
+from tvm import topi
+from tvm.topi.util import get_const_tuple
 import tvm
 from tvm import te
-import topi.testing
+import tvm.topi.testing
 
 _reorg_schedule = {
     "generic": topi.generic.schedule_reorg,

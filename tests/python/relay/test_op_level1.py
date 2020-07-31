@@ -22,7 +22,7 @@ import scipy
 from tvm import relay
 from tvm.relay import transform
 from tvm.relay.testing import ctx_list, run_infer_type
-import topi.testing
+import tvm.topi.testing
 from tvm.contrib.nvcc import have_fp16
 
 

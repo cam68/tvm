@@ -17,8 +17,8 @@
 import numpy as np
 import tvm
 from tvm import te
-import topi
-from topi.util import get_const_tuple
+from tvm import topi
+from tvm.topi.util import get_const_tuple
 
 def with_tvm(lam, *args):
     """ Take numpy arrays as args, convert them to TVM tensors and call `lam`.

@@ -20,12 +20,12 @@ import math
 import numpy as np
 import tvm
 from tvm import te
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 
 from tvm.contrib.pickle_memoize import memoize
-from topi.util import get_const_tuple
-from topi.vision import ssd, non_max_suppression, get_valid_counts
+from tvm.topi.util import get_const_tuple
+from tvm.topi.vision import ssd, non_max_suppression, get_valid_counts
 
 _get_valid_counts_implement = {
     "generic": (topi.vision.get_valid_counts, topi.generic.schedule_get_valid_counts),

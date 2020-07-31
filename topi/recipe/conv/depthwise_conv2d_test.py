@@ -21,9 +21,9 @@ import numpy as np
 from scipy import signal
 from tvm.contrib import nvcc
 
-import topi
-from topi.util import get_const_tuple
-from topi.cuda.depthwise_conv2d import schedule_depthwise_conv2d_nchw, schedule_depthwise_conv2d_nhwc
+from tvm import topi
+from tvm.topi.util import get_const_tuple
+from tvm.topi.cuda.depthwise_conv2d import schedule_depthwise_conv2d_nchw, schedule_depthwise_conv2d_nhwc
 
 TASK = "depthwise_conv2d"
 USE_MANUAL_CODE = False

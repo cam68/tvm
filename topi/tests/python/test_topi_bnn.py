@@ -18,8 +18,8 @@
 import numpy as np
 import tvm
 from tvm import te
-import topi
-from topi.util import get_const_tuple
+from tvm import topi
+from tvm.topi.util import get_const_tuple
 from tvm.contrib.pickle_memoize import memoize
 
 

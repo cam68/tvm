@@ -16,7 +16,7 @@
 # under the License.
 """Test code for util"""
 
-import topi
+from tvm import topi
 
 
 def verify_get_shape(src_shape, src_layout, dst_layout, expect_shape):

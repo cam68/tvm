@@ -19,9 +19,9 @@ import scipy
 from scipy import special
 import tvm
 from tvm import te
-import topi
-import topi.testing
-from topi import util
+from tvm import topi
+import tvm.topi.testing
+from tvm.topi import util
 from common import get_all_backend
 
 

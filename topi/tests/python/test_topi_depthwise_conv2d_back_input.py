@@ -16,14 +16,14 @@
 # under the License.
 import tvm
 from tvm import te
-import topi
+from tvm import topi
 import numpy as np
 from tvm.contrib.pickle_memoize import memoize
 from scipy import signal
-from topi.util import get_const_tuple
-from topi.nn.util import get_pad_tuple
-import topi.testing
-from topi.cuda.depthwise_conv2d import schedule_depthwise_conv2d_backward_input_nhwc
+from tvm.topi.util import get_const_tuple
+from tvm.topi.nn.util import get_pad_tuple
+import tvm.topi.testing
+from tvm.topi.cuda.depthwise_conv2d import schedule_depthwise_conv2d_backward_input_nhwc
 
 
 def verify_depthwise_conv2d_back_input(batch, in_channel, in_h, channel_multiplier, filter_h, stride_h, padding_h):

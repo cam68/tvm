@@ -19,8 +19,8 @@ from __future__ import print_function
 import numpy as np
 import tvm
 from tvm import te
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 
 _argsort_implement = {
     "generic": (topi.argsort, topi.generic.schedule_argsort),

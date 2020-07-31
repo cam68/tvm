@@ -18,8 +18,8 @@
 import numpy as np
 import tvm
 from tvm import te
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 from common import get_all_backend
 
 

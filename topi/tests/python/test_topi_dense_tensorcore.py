@@ -18,9 +18,9 @@
 """Test code for dense tensorcore operator"""
 import numpy as np
 import tvm
-import topi
-import topi.testing
-from topi.util import get_const_tuple
+from tvm import topi
+import tvm.topi.testing
+from tvm.topi.util import get_const_tuple
 from tvm import te
 from tvm.contrib.pickle_memoize import memoize
 from tvm.contrib import nvcc

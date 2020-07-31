@@ -18,7 +18,7 @@ import pytest
 import tvm
 from tvm import te
 import numpy as np
-import topi.testing
+import tvm.topi.testing
 from tvm.contrib import cblas
 
 def verify_matmul_add(m, l, n, transa=False, transb=False, dtype="float32"):

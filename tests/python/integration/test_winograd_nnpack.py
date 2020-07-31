@@ -21,9 +21,9 @@ from tvm import autotvm
 from tvm.autotvm.task.space import FallbackConfigEntity
 from tvm.contrib import nnpack
 from tvm.contrib.pickle_memoize import memoize
-import topi
-import topi.testing
-from topi.util import get_const_tuple
+from tvm import topi
+import tvm.topi.testing
+from tvm.topi.util import get_const_tuple
 from pytest import skip
 
 

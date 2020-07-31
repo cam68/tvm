@@ -16,8 +16,8 @@
 # under the License.
 import numpy as np
 
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 import tvm
 from tvm import te
 from tvm import relay

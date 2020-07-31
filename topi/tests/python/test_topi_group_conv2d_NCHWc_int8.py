@@ -21,10 +21,10 @@ import numpy as np
 import tvm
 from tvm import te
 from tvm import autotvm
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 from tvm.contrib.pickle_memoize import memoize
-from topi.util import get_const_tuple
+from tvm.topi.util import get_const_tuple
 import pytest
 
 from common import get_all_backend

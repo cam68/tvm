@@ -22,7 +22,7 @@ from tvm import te
 from tvm import relay
 from tvm.relay.loops import while_loop
 from tvm.relay.testing import run_infer_type as infer_type
-import topi.testing
+import tvm.topi.testing
 
 def int32(val):
     return relay.const(val, 'int32')
@@ -827,7 +827,7 @@ def verify_any_crop_and_resize(data_shape, boxes_shape, box_indices_shape, crop_
     mod["main"] = relay.Function([data, boxes, box_indices], y)
     data_np = np.random.uniform(size=data_shape).astype(dtype)
     boxes_np = np.random.uniform(size=static_boxes).astype(dtype)
-    box_indices_np = np.random.uniform(size=static_box_indices_shape).astype(indices_dtype)    
+    box_indices_np = np.random.uniform(size=static_box_indices_shape).astype(indices_dtype)
     for kind in ["debug", "vm"]:
         ex = relay.create_executor(kind, mod=mod, ctx=tvm.cpu(), target="llvm")
         result = ex.evaluate()(data_np, boxes_np, box_indices_np)
@@ -835,8 +835,8 @@ def verify_any_crop_and_resize(data_shape, boxes_shape, box_indices_shape, crop_
 
 def test_any_crop_and_resize():
     verify_any_crop_and_resize(
-        data_shape=(1, 234, 234, 256), 
-        boxes_shape=(relay.Any(), 4), 
+        data_shape=(1, 234, 234, 256),
+        boxes_shape=(relay.Any(), 4),
         box_indices_shape=(relay.Any(),),
         crop_size=(14, 14),
         layout='NHWC',
@@ -844,8 +844,8 @@ def test_any_crop_and_resize():
         static_box_indices_shape=(128,),
         ref_out_shape=(128, 14, 14, 256))
     verify_any_crop_and_resize(
-        data_shape=(1, 256, 234, 234), 
-        boxes_shape=(relay.Any(), 4), 
+        data_shape=(1, 256, 234, 234),
+        boxes_shape=(relay.Any(), 4),
         box_indices_shape=(relay.Any(),),
         crop_size=(14, 14),
         layout='NCHW',

@@ -18,9 +18,9 @@
 import numpy as np
 import tvm
 from tvm import te
-import topi
-import topi.testing
-from topi.util import get_const_tuple
+from tvm import topi
+import tvm.topi.testing
+from tvm.topi.util import get_const_tuple
 from tvm.contrib.pickle_memoize import memoize
 
 from common import get_all_backend

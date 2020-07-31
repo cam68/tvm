@@ -21,7 +21,7 @@ import logging
 import numpy as np
 import tvm
 from tvm import te
-import topi
+from tvm import topi
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 LOGGER = logging.getLogger('test_conv_int8_intel')

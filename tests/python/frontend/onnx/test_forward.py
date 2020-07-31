@@ -20,8 +20,8 @@ import onnx
 from onnx import helper, TensorProto, mapping
 import torch
 import torchvision
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 import tvm
 from tvm import te
 from tvm import relay

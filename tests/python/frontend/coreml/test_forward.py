@@ -22,11 +22,11 @@ from coremltools.models import datatypes
 import tvm
 from tvm import te
 from tvm.contrib import graph_runtime
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 from tvm import relay
 from tvm.relay.testing.config import ctx_list
-from topi.testing import conv2d_nchw_python
+from tvm.topi.testing import conv2d_nchw_python
 
 import coremltools as cm
 import model_zoo

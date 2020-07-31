@@ -21,7 +21,7 @@ import numpy as np
 import tvm
 from tvm import te
 from tvm import autotvm
-from topi.cuda.tensor_intrin import dp4a
+from tvm.topi.cuda.tensor_intrin import dp4a
 
 DO_TUNING = True
 PRETUNED_INDEX = 75333

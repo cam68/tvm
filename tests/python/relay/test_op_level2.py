@@ -24,8 +24,8 @@ from tvm import relay
 from tvm.relay import transform
 from tvm.relay.testing import ctx_list, run_infer_type
 from tvm.contrib import util
-import topi.testing
-from topi.cuda.conv3d_winograd import _infer_tile_size
+import tvm.topi.testing
+from tvm.topi.cuda.conv3d_winograd import _infer_tile_size
 
 
 def test_conv1d_infer_type():

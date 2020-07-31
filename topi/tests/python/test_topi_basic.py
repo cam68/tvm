@@ -16,8 +16,8 @@
 # under the License.
 import tvm
 from tvm import te
-import topi
-from topi import util
+from tvm import topi
+from tvm.topi import util
 
 
 def test_util():

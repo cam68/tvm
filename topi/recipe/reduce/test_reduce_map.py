@@ -20,7 +20,7 @@ from tvm import te
 from tvm.contrib import nvcc
 import numpy as np
 
-import topi
+from tvm import topi
 
 
 TASK = "reduce_map"

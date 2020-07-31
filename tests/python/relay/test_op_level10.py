@@ -19,12 +19,12 @@
 import numpy as np
 import tvm
 from tvm import te
-import topi.testing
+import tvm.topi.testing
 from tvm import relay
 from tvm.relay import transform
 from tvm.relay.testing import ctx_list, run_infer_type
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 
 
 def test_checkpoint():
@@ -213,7 +213,7 @@ def test_broadcast_to_like():
     x = relay.Var("x", relay.ty.TensorType(shape , dtype))
     y = relay.Var("y", relay.ty.TensorType(shape_like, dtype))
     z = relay.broadcast_to_like(x, y)
-    
+
     zz = run_infer_type(z)
     assert zz.checked_type == relay.ty.TensorType(shape_like, dtype)
 
@@ -221,7 +221,7 @@ def test_broadcast_to_like():
     x = np.random.uniform(size=shape).astype(dtype)
     y = np.random.uniform(size=shape_like).astype(dtype)
     ref_res = np.broadcast_to(x, shape_like)
-    
+
     for target, ctx in ctx_list():
         for kind in ["graph", "debug"]:
             intrp = relay.create_executor(kind, ctx=ctx, target=target)

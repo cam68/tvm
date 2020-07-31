@@ -29,8 +29,8 @@ from tvm import te
 from tvm import relay
 from tvm import autotvm
 from tvm.contrib import util
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 import vta
 from vta import program_fpga, reconfig_runtime
 import vta.testing

@@ -18,8 +18,8 @@
 
 import tvm
 from tvm import te
-import topi
-import topi.testing
+from tvm import topi
+import tvm.topi.testing
 import numpy as np
 from tvm.contrib.pickle_memoize import memoize
 

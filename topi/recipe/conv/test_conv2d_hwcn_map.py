@@ -21,8 +21,8 @@ import scipy.signal
 import tvm
 from tvm import te
 from tvm.contrib import nvcc
-import topi
-from topi.util import get_const_tuple
+from tvm import topi
+from tvm.topi.util import get_const_tuple
 
 TASK = "conv2d_hwcn_map"
 USE_MANUAL_CODE = False
