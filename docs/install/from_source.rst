@@ -51,9 +51,9 @@ Build the Shared Library
 
 Our goal is to build the shared libraries:
 
-- On Linux the target library are `libtvm.so, libtvm_topi.so`
-- On macOS the target library are `libtvm.dylib, libtvm_topi.dylib`
-- On Windows the target library are `libtvm.dll, libtvm_topi.dll`
+- On Linux the target library are `libtvm.so`
+- On macOS the target library are `libtvm.dylib`
+- On Windows the target library are `libtvm.dll`
 
 
 .. code:: bash
@@ -188,8 +188,6 @@ Method 2
        #       providing --user flag may trigger error during installation in such case.
        export MACOSX_DEPLOYMENT_TARGET=10.9  # This is required for mac to avoid symbol conflicts with libstdc++
        cd python; python setup.py install --user; cd ..
-       cd topi/python; python setup.py install --user; cd ../..
-
 
 Python dependencies
 ~~~~~~~~~~~~~~~~~~~
