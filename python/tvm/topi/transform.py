@@ -48,19 +48,22 @@ def expand_like(a, shape_like, axis):
     This operation can always be composed of unsqueezing and
     expanding dims on those unsqueezed axes.
 
-    Examples::
-    input = [ 12.  19.  27.]
-    input.shape = (3,)
+    Examples
+    --------
+    .. code-block::
 
-    new_shape_array = [[[1,2],[2,3],[1,3]],
-                      [[1,4],[4,3],[5,2]],
-                      [[7,1],[7,2],[7,3]]]
-    new_shape_array.shape = (3, 3, 2)
+        input = [ 12.  19.  27.]
+        input.shape = (3,)
 
-    expand_like(input, [1,2], new_shape_array) =
-                      [[[12,12],[12,12],[12,12]],
-                      [[19,19],[19,19],[19,19]],
-                      [[27,27],[27,27],[27,27]]]
+        new_shape_array = [[[1,2],[2,3],[1,3]],
+                        [[1,4],[4,3],[5,2]],
+                        [[7,1],[7,2],[7,3]]]
+        new_shape_array.shape = (3, 3, 2)
+
+        expand_like(input, [1,2], new_shape_array) =
+                        [[[12,12],[12,12],[12,12]],
+                        [[19,19],[19,19],[19,19]],
+                        [[27,27],[27,27],[27,27]]]
 
     Parameters
     ----------
@@ -70,6 +73,7 @@ def expand_like(a, shape_like, axis):
         The tensor to with target shape.
     axis: list of int
         axis to be expanded on
+
     Returns
     -------
     ret : tvm.te.Tensor
@@ -458,7 +462,7 @@ def gather_nd(a, indices):
 def matmul(a, b, transp_a=False, transp_b=False):
     """
     Creates an operation that calculates a matrix multiplication (row-major notation):
-        A(i, k) * B(k, j)
+    A(i, k) * B(k, j)
     if trans_a == trans_b, the usual transposed combinations, otherwise
 
     Parameters

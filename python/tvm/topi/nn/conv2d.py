@@ -673,13 +673,15 @@ def conv2d_winograd_weight_transform(kernel, tile_size):
 
 def conv2d_winograd_nnpack_weight_transform(kernel, convolution_algorithm, out_dtype):
     """Weight transformation for winograd
-     Parameters
+
+    Parameters
     ----------
     kernel: Tensor
         The raw kernel tensor with layout "NCHW". Only 3x3 kernel is supported for now.
     convolution_algorithm: int
         The convolution algorithm for Winograd NNPACK.
-     Returns
+
+    Returns
     -------
     output : tvm.te.Tensor
         4-D with shape [alpha, alpha, CO, CI]
@@ -771,8 +773,8 @@ def group_conv2d_nchw(Input, Filter, stride, padding, dilation, groups, out_dtyp
 def unpack_NCHWc_to_nchw(packed_out, out_dtype):
     """Unpack conv2d_NCHWc output from layout NCHWc to NCHW
 
-     Parameters
-    -----------
+    Parameters
+    ----------
     packed_out : tvm.te.Tensor
         The output tensor of conv2d_NCHWc.
 

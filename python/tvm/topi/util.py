@@ -365,8 +365,8 @@ def get_shape(src_shape, src_layout, dst_layout):
 def within_index(b, e, s, i):
     """Return a boolean value that indicates if i is within the given index.
 
-    Parameter
-    ---------
+    Parameters
+    ----------
     b : Expr
       beginning of the index
 
@@ -400,8 +400,8 @@ def make_idx(b, e, s, z, i):
     The returned value is only meaningful if within_index() returns True
     for the same set of parameters.
 
-    Parameter
-    ---------
+    Parameters
+    ----------
     b : Expr
       beginning of the index
 

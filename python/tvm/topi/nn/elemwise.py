@@ -63,12 +63,14 @@ def leaky_relu(x, alpha):
 
 @tvm.te.tag_scope(tag=tag.BROADCAST)
 def prelu(x, slope, axis=1):
-    """ PReLU.
+    """PReLU.
     It accepts two arguments: an input ``x`` and a weight array ``W``
     and computes the output as :math:`PReLU(x) y = x > 0 ? x : W * x`,
     where :math:`*` is an elementwise multiplication for each sample in the
     batch.
-    Arguments:
+
+    Parameters
+    ----------
     x : tvm.te.Tensor
         Input argument.
 
@@ -78,12 +80,14 @@ def prelu(x, slope, axis=1):
     axis : int
         The axis where the channel data needs to be applied
 
-    Returns:
+    Returns
+    -------
     y : tvm.te.Tensor
         The result.
 
-    Links:
-        [http://arxiv.org/pdf/1502.01852v1.pdf]
+    Links
+    -----
+    [http://arxiv.org/pdf/1502.01852v1.pdf]
     """
 
     assert len(slope.shape) == 1

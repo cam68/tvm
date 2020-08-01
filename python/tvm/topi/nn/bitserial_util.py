@@ -24,10 +24,14 @@ from ..util import get_const_int
 
 def bitpack(data, bits, pack_axis, bit_axis, pack_type, name="QuantizeInput"):
     """Packs data into format necessary for bitserial computation
+
+    Parameters
+    ----------
     pack_axis : int
        index of the axis to pack in data
     bit_axis : int
-       index of axis to place bit axis in resulting packed data"""
+       index of axis to place bit axis in resulting packed data
+    """
     ishape = data.shape
     n = len(ishape)
     if pack_type == 'uint8':
