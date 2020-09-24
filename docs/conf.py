@@ -137,12 +137,10 @@ todo_include_todos = False
 
 # The theme is set by the make target
 html_theme = os.environ.get("TVM_THEME", "rtd")
-
 on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 # only import rtd theme and set it if want to build docs locally
 if not on_rtd and html_theme == "rtd":
     import sphinx_rtd_theme
-
     html_theme = "sphinx_rtd_theme"
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
@@ -156,8 +154,7 @@ html_theme_options = {
     "logo_only": True,
 }
 
-html_logo = "_static/img/tvm-logo-small.png"
-
+# html_logo = "_static/img/tvm-logo-small.png"
 html_favicon = "_static/img/tvm-logo-square.png"
 
 
@@ -282,4 +279,5 @@ def process_docstring(app, what, name, obj, options, lines):
 
 def setup(app):
     app.connect("autodoc-process-docstring", process_docstring)
-    app.add_css_file("css/tvm_theme.css")
+    app.add_css_file("css/custom.css")
+    app.add_js_file("js/custom.js")
