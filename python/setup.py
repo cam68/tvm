@@ -173,9 +173,9 @@ def get_package_data_files():
 
 
 setup(
-    name="tvm",
+    name="tlcpack-nightly",
     version=__version__,
-    description="TVM: An End to End Tensor IR/DSL Stack for Deep Learning Systems",
+    description="Tensor learning compiler binary distribution",
     zip_safe=False,
     entry_points={"console_scripts": ["tvmc = tvm.driver.tvmc.main:main"]},
     install_requires=[
@@ -208,7 +208,7 @@ setup(
     package_dir={"tvm": "tvm"},
     package_data={"tvm": get_package_data_files()},
     distclass=BinaryDistribution,
-    url="https://github.com/apache/incubator-tvm",
+    url="https://tlcpack.ai",
     ext_modules=config_cython(),
     **setup_kwargs,
 )

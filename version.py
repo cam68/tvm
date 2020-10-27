@@ -46,6 +46,7 @@ __most_recent_tag__ = "v0.7.0"
 
 PROJ_ROOT = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
 
+print(PROJ_ROOT)
 
 def py_str(cstr):
     return cstr.decode("utf-8")
